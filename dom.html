@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and DOM Manipulation Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <span class="code-icon">⌨️</span>
+                <h1>JavaScript DOM Explorer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#text-manipulation">Text</a></li>
+                    <li><a href="#style-manipulation">Styles</a></li>
+                    <li><a href="#element-manipulation">Elements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro-section">
+            <h2>Introduction to JavaScript & DOM</h2>
+            <p>
+                The Document Object Model (DOM) is a programming interface for web documents. 
+                It represents the page so that programs can change the document structure, style, and content. 
+                JavaScript is the primary language used to manipulate the DOM.
+            </p>
+            <p>This tutorial demonstrates three fundamental DOM manipulation techniques:</p>
+            <ul>
+                <li>Changing text content dynamically</li>
+                <li>Modifying CSS styles via JavaScript</li>
+                <li>Adding and removing elements</li>
+            </ul>
+            <div class="tip">
+                <strong>Tip:</strong> Try the interactive examples below to see DOM manipulation in action!
+            </div>
+        </section>
+
+        <section id="text-manipulation" class="demo-section">
+            <h2>Text Manipulation</h2>
+            <p>JavaScript can dynamically change the text content of HTML elements using textContent, innerText, or innerHTML properties.</p>
+            
+            <div class="demo-container">
+                <div class="demo-box">
+                    <div id="textDemo" class="demo-content">Hello, World!</div>
+                    <div class="button-group">
+                        <button onclick="changeText()">Change Text</button>
+                        <button onclick="resetText()" class="secondary">Reset</button>
+                    </div>
+                </div>
+                <pre class="code-block"></pre>
+            </div>
+        </section>
+
+        <section id="style-manipulation" class="demo-section">
+            <h2>Style Manipulation</h2>
+            <p>JavaScript can modify the CSS styles of elements either by directly manipulating the style property or by adding and removing CSS classes.</p>
+            
+            <div class="demo-container">
+                <div class="demo-box">
+                    <div id="styleDemo" class="demo-content">This box's styles can be modified with JavaScript</div>
+                    <div class="button-group">
+                        <button onclick="changeColor()">Change Color</button>
+                        <button onclick="increaseSize()">Increase Size</button>
+                        <button onclick="addBorder()">Add Border</button>
+                        <button onclick="resetStyles()" class="secondary">Reset</button>
+                    </div>
+                </div>
+                <pre class="code-block"></pre>
+            </div>
+        </section>
+
+        <section id="element-manipulation" class="demo-section">
+            <h2>Element Manipulation</h2>
+            <p>JavaScript can dynamically create new elements, insert them into the DOM, and remove existing elements.</p>
+            
+            <div class="demo-container">
+                <div class="demo-box">
+                    <div id="elementDemo" class="demo-content">
+                        <ul id="itemList"></ul>
+                    </div>
+                    <div class="button-group">
+                        <button onclick="addElement()">Add Element</button>
+                        <button onclick="removeElement()">Remove Last</button>
+                        <button onclick="removeAll()" class="secondary">Remove All</button>
+                    </div>
+                </div>
+                <pre class="code-block"></pre>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
